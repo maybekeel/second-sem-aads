@@ -1,0 +1,16 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/kar/spbspu-labs-aads-904-a/ivlicheva.karina/S3'
+echo "[C++ ] ioparse.o"
+g++ -Wall -Wextra -Werror -Wno-missing-field-initializers -Wold-style-cast -std=gnu++14 -I../common -g -MMD -MP -c ioparse.cpp -o ioparse.o
+echo "[C++ ] iolists.o"
+g++ -Wall -Wextra -Werror -Wno-missing-field-initializers -Wold-style-cast -std=gnu++14 -I../common -g -MMD -MP -c iolists.cpp -o iolists.o
+echo "[C++ ] main.o"
+g++ -Wall -Wextra -Werror -Wno-missing-field-initializers -Wold-style-cast -std=gnu++14 -I../common -g -MMD -MP -c main.cpp -o main.o
+echo "[C++ ] Commands.o"
+g++ -Wall -Wextra -Werror -Wno-missing-field-initializers -Wold-style-cast -std=gnu++14 -I../common -g -MMD -MP -c Commands.cpp -o Commands.o
+echo "[C++ ] ../common/iomessages.o"
+g++ -Wall -Wextra -Werror -Wno-missing-field-initializers -Wold-style-cast -std=gnu++14 -I../common -g -MMD -MP -c ../common/iomessages.cpp -o ../common/iomessages.o
+echo "[LINK] ioparse.o iolists.o main.o Commands.o ../common/iomessages.o"
+g++ -Wall -Wextra -Werror -Wno-missing-field-initializers -Wold-style-cast -std=gnu++14 -g ioparse.o iolists.o main.o Commands.o ../common/iomessages.o -o out
+make: Leaving directory '/home/kar/spbspu-labs-aads-904-a/ivlicheva.karina/S3'
+ 

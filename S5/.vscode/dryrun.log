@@ -1,0 +1,22 @@
+make out --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/kar/spbspu-labs-aads-904-a/ivlicheva.karina/S5'
+echo "[C++ ] summation.o"
+g++ -Wall -Wextra -Werror -Wno-missing-field-initializers -Wold-style-cast -std=gnu++14 -I../common -g -MMD -MP -c summation.cpp -o summation.o
+echo "[C++ ] iotree.o"
+g++ -Wall -Wextra -Werror -Wno-missing-field-initializers -Wold-style-cast -std=gnu++14 -I../common -g -MMD -MP -c iotree.cpp -o iotree.o
+echo "[C++ ] iofunctional.o"
+g++ -Wall -Wextra -Werror -Wno-missing-field-initializers -Wold-style-cast -std=gnu++14 -I../common -g -MMD -MP -c iofunctional.cpp -o iofunctional.o
+echo "[C++ ] main.o"
+g++ -Wall -Wextra -Werror -Wno-missing-field-initializers -Wold-style-cast -std=gnu++14 -I../common -g -MMD -MP -c main.cpp -o main.o
+echo "[C++ ] ../common/CommandsS2.o"
+g++ -Wall -Wextra -Werror -Wno-missing-field-initializers -Wold-style-cast -std=gnu++14 -I../common -g -MMD -MP -c ../common/CommandsS2.cpp -o ../common/CommandsS2.o
+echo "[C++ ] ../common/IODataset.o"
+g++ -Wall -Wextra -Werror -Wno-missing-field-initializers -Wold-style-cast -std=gnu++14 -I../common -g -MMD -MP -c ../common/IODataset.cpp -o ../common/IODataset.o
+echo "[C++ ] ../common/IOParse.o"
+g++ -Wall -Wextra -Werror -Wno-missing-field-initializers -Wold-style-cast -std=gnu++14 -I../common -g -MMD -MP -c ../common/IOParse.cpp -o ../common/IOParse.o
+echo "[C++ ] ../common/iomessages.o"
+g++ -Wall -Wextra -Werror -Wno-missing-field-initializers -Wold-style-cast -std=gnu++14 -I../common -g -MMD -MP -c ../common/iomessages.cpp -o ../common/iomessages.o
+echo "[LINK] summation.o iotree.o iofunctional.o main.o ../common/CommandsS2.o ../common/IODataset.o ../common/IOParse.o ../common/iomessages.o"
+g++ -Wall -Wextra -Werror -Wno-missing-field-initializers -Wold-style-cast -std=gnu++14 -g summation.o iotree.o iofunctional.o main.o ../common/CommandsS2.o ../common/IODataset.o ../common/IOParse.o ../common/iomessages.o -o out
+make: Leaving directory '/home/kar/spbspu-labs-aads-904-a/ivlicheva.karina/S5'
+ 
